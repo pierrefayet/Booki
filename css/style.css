@@ -1,8 +1,38 @@
-*, *:before, *:after { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Raleway","sans-serif";
     box-sizing: border-box; 
 }
-h1 {
-    font-family: 'Raleway',cursive;
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding-top: 50px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav #menu a:hover {
+    border-top: 3px #0065FC solid;
+}
+    
+
+#logo {
+    margin-inline-end: auto;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+#menu {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    padding: 30px;
 }
