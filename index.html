@@ -4,24 +4,225 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/css/style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/7f4491d5c0.js" crossorigin="anonymous"></script>
+	<link href="/css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
 	<title>Booki</title>
 </head>
 
 <body>
 	<header>
+	    <!-- Header -->
 		<nav>
 			<img class="logo" src="./assets/images/logo/Booki.png" alt="logo Booki">
-			<div class="menu">
-				<a id="lien1" href="">Hébergements</a>
-				<a id="lien2" href="">Activités</a>
-			</div>
-
-
+			<ul>
+				<li><a href="#accommodation">Hébergements</a></li>
+				<li><a href="#activity">Activités</a></li>
+			</ul>
 		</nav>
-
 	</header>
 
+	<main>
+
+		<!-- TITRE -->
+		<section id="title">
+			<div>
+				<h1>Trouver votre hébergement pour des vacances de rêve</h1>
+				<h2>En plein centre ville ou en pleine nature </h2>
+			</div>
+			<form method="post" action="#">
+				<div>
+					<i class="fa-sharp fa-solid fa-location-dot"></i> 
+					<input type="search" placeholder="Marseille,France">
+					<button>Rechercher</button>
+				</div>
+			</form>	
+		</section>
+
+		<!-- SECTION FILTRES -->
+		<section id="filters">
+			<p>Filtres</p>
+				<ul>
+					<li><i class="fas fa-money-bill-wave"></i></li>
+					<li><a href="#">Economique</a></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li><a href="#">Familial</a></li>
+				</ul>
+				<ul>
+					<li>icone</li>
+					<li><a href="#">Economique</a></li>
+				</ul>
+				<ul>
+					<li>icone</li>
+					<li><a href="#">Economique</a></li>
+				</ul>
+			</section>
+		
+		<!--ACCOMMADATION-->
+		<section id="accomadation">
+			<div>
+				<h3>Hébergements à Marseille</h3>
+			</div>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"alt="room"></li>
+				<li>Auberge la Cannebière</li>
+				<li>Nuit à partir de 25<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"alt="room"></li>
+				<li>hôtel du port</li>
+				<li>Nuit à partir de 52<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+				</li>
+			</ul><ul>
+				<li><img src="./assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg "alt="room"></li>
+				<li>hôtel les mouettes</li>
+				<li>Nuit à partir de 76<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="room"></li>
+				<li>Auberge de la mer</li>
+				<li>Nuit à partir de 46<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg "alt="room"></li>
+				<li>Auberge Le Panier</li>
+				<li>Nuit à partir de 23<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"alt="room"></li>
+				<li>Hôtel chez Amina</li>
+				<li>Nuit à partir de 96<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+				</li>
+			</ul>
+		</section>
+		
+		<!-- MOSTFAVORITE -->
+		<aside id="mostFavorite">
+			<div>
+				<h3>Les plus populaire</h3>
+			</div>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"alt="room"></li>
+				<li>Hôtel Le soleil du matin</li>
+				<li>Nuit à partir de 128<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"alt="room"></li>
+				<li>Au coeur de l'eau chambre d'hôtes</li>
+				<li>Nuit à partir de 71<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"alt="room"></li>
+				<li>Hôtel Tout bleu et blanc</li>
+				<li>Nuit à partir de 69<i class="fa-sharp fa-solid fa-euro-sign"></i></li>
+				<li><i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+					<i class="fas fa-star hostingMainCardGradeIcon" data-active="false" aria-hidden="true"></i>
+				</li>	
+			</aside>
+		<!-- ACTIVITIESINMARSEILLE -->
+		<section id="activitiesInMarseille">
+			<div>
+				<h3>Activités à Marseille</h3>
+			</div>
+			<ul>
+				<li><img src="./assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"alt="room"></li>
+				<li>Vieux port</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"alt="room"></li>
+				<li> Fort de Pomègues</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"alt="room"></li>
+				<li>île du Frioul</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"alt="room"></li>
+				<li>Parc National des calanques</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg "alt="room"></li>
+				<li>Notre-dame-de-la-garde</li>
+			</ul>
+			<ul>
+				<li><img src="./assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg "alt="room"></li>
+				<li>Parc Longchamps</li>
+			</ul>
+		</section>
+		
+		<!-- FOOTER -->
+		<footer>
+			<ul>
+				<li>A propos</li>
+				<li>Fonctionnement du site</li>
+				<li>Conditions générales de vente</li>
+				<li>Données et confidentialités</li>
+			</ul>
+			<ul>
+				<li>Nos hébergement</li>
+				<li>Charte qualité</li>
+				<li>soumettre votre hotel</li>
+			</ul>
+			<ul>
+				<li>Assistance</li>
+				<li>Centre d'aide</li>
+				<li>Nous contacter</li>
+			</ul>
+		</footer>
+	</main>
 </body>
 
 </html>
