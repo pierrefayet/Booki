@@ -20,6 +20,11 @@ li {
     list-style-type: none;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* HEADER */
 nav {
     display: flex;
@@ -27,8 +32,6 @@ nav {
 }
 
 nav a {
-    color: inherit;
-    text-decoration: none;
     width: auto;
     padding: 20px;
 }
@@ -203,23 +206,39 @@ input::placeholder {
     font-weight: 800;
     font-size: medium;
 }
+
 section {
     
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .figure {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     border: 3px solid blue;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #F2F2F2;
     
 }
-.figure img {
-    width: 30%;
+.accomodation  h3+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
+.accomodation div img {
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+
+/* FOOTER */
 footer {
     display: flex;
     background-color: lightgrey;
