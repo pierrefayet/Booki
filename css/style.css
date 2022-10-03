@@ -107,9 +107,9 @@ input::placeholder {
     color: #141414;
 }
 
-.search-form>form>i {
+.search-form form i {
     display: flex;
-    height: 50px;
+    height: 20px;
     justify-content: center;
     align-items: center;
     border-radius: 10px 0px 0px 10px;
@@ -120,7 +120,7 @@ input::placeholder {
     font-size: initial;
 }
 
-.search-form>form>input {
+.search-form form input {
     padding: 10px;
     border: 1px solid rgb(241, 240, 240);
     border-left: transparent;
@@ -129,7 +129,7 @@ input::placeholder {
     width: 60%;
 }
 
-.search-form>form>button {
+.search-form form button {
     border: transparent;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
@@ -139,9 +139,10 @@ input::placeholder {
     font-size: large;
 }
 
-.search-form>form {
+.search-form form {
     display: flex;
     width: 100%;
+    height: 60px
 }
 
 /* FILTER */
@@ -247,7 +248,7 @@ input::placeholder {
     width: 30%;
     border: 5px solid #F2F2F2;
     border-radius: 20px;
-    box-shadow: 3px 3px 2px #adadad;
+    box-shadow: 0 2px 2px #cbcbcb;
     margin-bottom: 4%;
     background-color: #f2f2f2;
     height: 220px;
@@ -268,7 +269,7 @@ input::placeholder {
 .accomodation .figure img {
     width: 100%;
     height: 130px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
@@ -291,9 +292,9 @@ input::placeholder {
 }
 
 .accomodation p {
-    padding-bottom: 10px;
+    padding: 10px;
+    padding-top: 0px;
     margin: 0;
-
 }
 
 .extend p {
@@ -307,7 +308,8 @@ input::placeholder {
 }
 
 .accomodation figcaption {
-    padding-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 aside i {
@@ -323,42 +325,79 @@ aside {
     align-items: center;
     background-color: rgba(207, 207, 207, 0.641);
     border-radius: 15px;
+    padding-top: 30px;
 }
 
 aside div {
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
 }
 
-section figcaption {
-    font-weight: bold;
+#heading  i {
+    display: flex;
+    align-self: center;
 }
 
 aside .figure {
     display: flex;
     flex-direction: row;
-
-    border: 3px solid blue;
+    border: 5px solid #F2F2F2;
     border-radius: 20px;
-    box-shadow: 3px 3px 2px #F2F2F2;
-    margin-bottom: 20%;
-    width: 90%;
-    height: 13%;
+    box-shadow: 0 3px 2px #adadad;
+    margin-bottom: 10%;
+    width: 80%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+aside figure {
+    width: 170px;
+    margin: 0px;
 }
 
 aside a {
-
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
 }
 
-
-aside div img {
-    width: 100%;
-    height: 80%;
+aside figcaption {
+    padding-left: 10px;
 }
+
+aside  figure img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+aside  figcaption  h4 {
+    margin: 0px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+aside p:nth-child(2) {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+#heading {
+    justify-content: space-between;
+    width: 80%;
+}
+
+#heading i {
+    color: #242424;
+    font-size: larger;
+}
+
+aside .grey {
+    color: #a2a1a1;
+}
+
+/*ACTIVITIES*/
+
 
 /* FOOTER */
 footer {
@@ -368,7 +407,7 @@ footer {
     justify-content: space-around;
 }
 
-footer>ul {
+footer ul {
     margin-right: 10px;
 }
 
