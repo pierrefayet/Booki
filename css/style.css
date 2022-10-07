@@ -347,21 +347,23 @@ aside .figure {
     width: 80%;
     height: 150px;
     box-sizing: border-box;
+    background-color: #F2F2F2;
 }
 
 aside figure {
     width: 170px;
     margin: 0px;
+   
 }
 
 aside a {
     display: flex;
     flex-direction: row;
-    background-color: #F2F2F2;
-}
+ }
 
 aside figcaption {
     padding-left: 10px;
+    width: 100%;
 }
 
 aside  figure img {
@@ -398,60 +400,71 @@ aside .grey {
 
 /*ACTIVITIES*/
 #activities {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     border:  3px solid blue;
     width: 100%;
-    height: 500px;
+    height: 600px;
+    
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.display-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
 }
 
  #activities figure {
-    border: 3px solid black;
-    height: 100px;
-    box-sizing: border-box;
-    margin: 0px;
-
-}
-
-#activities .figure {
-    border : 3px solid violet;
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-
-}
-#activities a {
-    height: 100px;
+    height: 90%;
+    margin: -3px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #F2F2F2;
 }
 
 
-#activities  div a figure img {
+#activities .display-flex > .activity, #activities .multi-activities {
+    width: 25%;
+    
+}
+
+#activities .multi-activities {
+     width: 25%;
+     height: 100px
+     
+    }
+
+.activity {
+    border: 2px solid #F2F2F2;
+    border-top: transparent;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    margin: 20px;
+    box-shadow: 0 3px 2px #969696;
+}
+
+.accomodation a {
+    width: 100%;
+}
+
+#activities  img {
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #F2F2F2;
     width: 100%;
     height: 100%;
+}
+
+#activities figcaption {
+    height: 25x;
+    padding-left: 10px;
     box-sizing: border-box;
-    object-fit: cover;
 }
 
-#activities  h3 {
-    margin: 0px;
-    height: 50px;
-    width: 210px;
+.multi-activitie .activity {
+    height: 200px;
 }
-
-#activities  div .figure  {
-    height: 460px;
-}
-
-#activities > div:nth-child(2)  {
-    height: 500px;
-    width: 330px;
-}
-
-#smallpicture {
-display: flex;
-flex-direction: column;
-}
-
 
 /* FOOTER */
 footer {
