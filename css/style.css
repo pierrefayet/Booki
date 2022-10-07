@@ -20,8 +20,6 @@ main {
 section {
     display: flex;
     justify-content: space-between;
-
-
 }
 
 li {
@@ -29,6 +27,7 @@ li {
 }
 
 a {
+    display: block;
     color: inherit;
     text-decoration: none;
 }
@@ -235,14 +234,16 @@ input::placeholder {
 .accomodation {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 60%;
     background-color: rgba(207, 207, 207, 0.641);
-    border-radius: 15px;
-    height: 60%;
+    border-radius: 20px;
     padding: 30px;
 }
-
+.accomodation .column {
+    flex-direction: column;
+}
+.accomodation .column .figure {
+    width: 100%;
+}
 .accomodation .figure {
     display: flex;
     width: 30%;
@@ -271,6 +272,16 @@ input::placeholder {
     height: 130px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+}
+
+.accomodation .figure--row {
+    width: 100%;
+}
+.accomodation .figure--row a figure {
+    display:flex;
+}
+.accomodation .figure--row img {
+    height: 100%;
 }
 
 .accomodation a {
@@ -312,78 +323,6 @@ input::placeholder {
     font-weight: bold;
 }
 
-aside i {
-    color: #0065FC;
-}
-
-
-aside {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 30%;
-    align-items: center;
-    background-color: rgba(207, 207, 207, 0.641);
-    border-radius: 15px;
-    padding-top: 30px;
-}
-
-aside div {
-    display: flex;
-}
-
-#heading  i {
-    display: flex;
-    align-self: center;
-}
-
-aside .figure {
-    display: flex;
-    flex-direction: row;
-    border: 5px solid #F2F2F2;
-    border-radius: 20px;
-    box-shadow: 0 3px 2px #adadad;
-    margin-bottom: 10%;
-    width: 80%;
-    height: 150px;
-    box-sizing: border-box;
-    background-color: #F2F2F2;
-}
-
-aside figure {
-    width: 170px;
-    margin: 0px;
-   
-}
-
-aside a {
-    display: flex;
-    flex-direction: row;
- }
-
-aside figcaption {
-    padding-left: 10px;
-    width: 100%;
-}
-
-aside  figure img {
-    width: 150px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
-
-aside  figcaption  h4 {
-    margin: 0px;
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-aside p:nth-child(2) {
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
 #heading {
     justify-content: space-between;
     width: 80%;
@@ -398,6 +337,22 @@ aside .grey {
     color: #a2a1a1;
 }
 
+
+#accomodation {
+    display: flex;
+    margin: 0 -20px;
+}
+#accomodation > section,
+#accomodation > aside {
+    padding: 0 20px;
+}
+#accomodation > section {
+    width: 75%;
+}
+#accomodation > aside {
+    width: 25%;
+}
+
 /*ACTIVITIES*/
 #activities {
     display: block;
@@ -407,15 +362,13 @@ aside .grey {
     box-sizing: border-box;
 }
 #activities .display-flex {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: -20px;
+    margin: 0 -20px;
 }
 
 #activities .display-flex > div {
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
     width: 25%;
 }
 
@@ -425,6 +378,20 @@ aside .grey {
     border-radius: 20px 20px 0px 0px;
     background-color: #F2F2F2;
 }
+
+#activities figcaption {
+    height: 25x;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+ #activities .multi-activities .activity:not(:last-child){
+     margin-bottom: 40px;
+ }
+
+.activity,
+.multi-activities {
+    width: 100%;
+}
 .activity {
     border-top: transparent;
     border-radius: 20px;
@@ -432,28 +399,23 @@ aside .grey {
     box-shadow: 0 3px 2px #969696;
     overflow: hidden;
 }
-
+.activity a {
+    display: block;
+}
+.activity img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+.multi-activities img {
+    max-height: 200px;
+}
 .accomodation a {
     width: 100%;
 }
 
-#activities img {
-    margin: 0;
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#activities figcaption {
-    height: 25x;
-    padding-left: 10px;
-    box-sizing: border-box;
-}
-
-.multi-activitie .activity {
-    height: 200px;
-}
 
 /* FOOTER */
 footer {
