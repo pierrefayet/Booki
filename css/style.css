@@ -230,6 +230,20 @@ input::placeholder {
 
 /*ACCOMODATION*/
 
+#accomodation {
+    display: flex;
+    margin: 0 -20px;
+}
+#accomodation > section,
+#accomodation > aside {
+    padding: 0 20px;
+}
+#accomodation > section {
+    width: 75%;
+}
+#accomodation > aside {
+    width: 25%;
+}
 
 .accomodation {
     display: flex;
@@ -261,15 +275,16 @@ input::placeholder {
     justify-content: space-between;
 }
 
-.accomodation figure {
+.accomodation picture {
     margin: 0;
     border-radius: 20px;
     background-color: #F2F2F2;
+    width: 100%;
 }
 
-.accomodation .figure img {
+.accomodation .c-card__media img {
     width: 100%;
-    height: 130px;
+    height: 400px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -277,7 +292,7 @@ input::placeholder {
 .accomodation .figure--row {
     width: 100%;
 }
-.accomodation .figure--row a figure {
+.accomodation .figure--row a picture {
     display:flex;
 }
 .accomodation .figure--row img {
@@ -286,6 +301,7 @@ input::placeholder {
 
 .accomodation a {
     width: 100%;
+    display: block;
 }
 
 .accomodation .blue {
@@ -302,23 +318,14 @@ input::placeholder {
     padding-left: 20px;
 }
 
-.accomodation p {
-    padding: 10px;
-    padding-top: 0px;
-    margin: 0;
-}
-
-.extend p {
+.extend  {
     order: 6;
     margin-left: 15px;
-}
-
-.extend span {
     font-weight: bold;
     font-size: medium;
 }
 
-.accomodation figcaption {
+.accomodation  .c-card__text{
     padding: 10px;
     font-weight: bold;
 }
@@ -338,20 +345,6 @@ aside .grey {
 }
 
 
-#accomodation {
-    display: flex;
-    margin: 0 -20px;
-}
-#accomodation > section,
-#accomodation > aside {
-    padding: 0 20px;
-}
-#accomodation > section {
-    width: 75%;
-}
-#accomodation > aside {
-    width: 25%;
-}
 
 /*ACTIVITIES*/
 #activities {
@@ -372,21 +365,14 @@ aside .grey {
     width: 25%;
 }
 
- #activities figure {
-    margin: 0;
-    height: 90%;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #F2F2F2;
-}
-
-#activities figcaption {
+#activities  .c-card__content{
     height: 25x;
     padding-left: 10px;
     box-sizing: border-box;
 }
- #activities .multi-activities .activity:not(:last-child){
+#activities .multi-activities .activity:not(:last-child){
      margin-bottom: 40px;
- }
+}
 
 .activity,
 .multi-activities {
@@ -409,7 +395,7 @@ aside .grey {
     object-fit: cover;
     margin: 0;
 }
-.multi-activities img {
+. img {
     max-height: 200px;
 }
 .accomodation a {
