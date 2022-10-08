@@ -160,7 +160,7 @@ input::placeholder {
 
 #filters li {
     display: inline-block;
-    margin-bottom: 5px;
+    margin: 0;
 
 }
 
@@ -196,13 +196,11 @@ input::placeholder {
     transform: scale(1.01);
 }
 
-
 #information ul {
     display: flex;
     flex-direction: row;
     padding: 0px;
-    margin: 1% 0% 1% -2%;
-    padding-left: 30px;
+    margin: 0;
 }
 
 #information>ul>li:nth-child(1) {
@@ -255,7 +253,7 @@ input::placeholder {
 .accomodation .column {
     flex-direction: column;
 }
-.accomodation .column .figure {
+.accomodation .column .c-card__media {
     width: 100%;
 }
 .accomodation .figure {
@@ -395,7 +393,7 @@ aside .grey {
     object-fit: cover;
     margin: 0;
 }
-. img {
+img {
     max-height: 200px;
 }
 .accomodation a {
