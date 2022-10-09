@@ -421,14 +421,19 @@ aside .card__text {
 
 .accomodation__title {
     font-weight: 700;
+    
 }
 
 .activity__content  a {
     height: 100%;
+
 }
 
-#activities > section > div > div > div > a > picture {
-    height: 90%;
+.activity__content .card__media {
+    height: 85%;
+}
+.card__content {
+    margin: 10px;
 }
 
 /* FOOTER */
