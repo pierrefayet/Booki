@@ -101,8 +101,6 @@ h1+h2 {
     display: flex;
 }
 
-
-
 /*SEARCH BAR */
 .search-form {
     width: 35%;
@@ -112,9 +110,6 @@ h1+h2 {
 input::placeholder {
     color: #141414;
 }
-
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
 
 .search-form form i {
     display: flex;
@@ -317,55 +312,7 @@ aside .card__content {
     padding-right: 0;
 }
 
-@media (max-width: 992px) {
-    #accomodation {
-        display: block;
-    }
-    .accomodation.accomodation--inline .accomodation__content {
-        flex-direction: row;
-        height: auto;
-        justify-content: center;
-    }
-    #accomodation section {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    #accomodation  aside {
-        width: 100%;
-        padding-left: 0;
-        margin-top: 50px;
-    }
-    .accomodation.accomodation--inline {
-        flex-wrap: unset;
-        flex-direction: column;
-        height: 300px;
-    }
-    aside .accomodation__content  div a {
-        height: 140px;
-        width: 230px;
-    }
-    .accomodation__content > div {
-        padding: 0px 10px;
-    }    
-    aside .accomodation__content {
-        align-items: end;
-        flex-wrap: unset;
-    }
-    .accomodation.accomodation--inline .accomodation__content > div {
-        margin: 15px;
-    }
-    aside .card__content {
-        padding: 0px 0px 0px 10px;
-        width: 140px;
-        margin: 0; 
-    }
-    aside .card__text {
-        padding-bottom: 5px;
-    }    
 
-}
-@media (max-width: 768px) {}
 
 aside .card__text {
     padding-bottom: 30px;
@@ -512,9 +459,83 @@ footer li {
 
 footer ul li h3 {
     font-weight: bold;
-
 }
 
+@media (max-width: 992px) {
+    #accomodation {
+        display: block;
+    }
+    .accomodation.accomodation--inline .accomodation__content {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+    }
+    #accomodation section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #accomodation  aside {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    .accomodation.accomodation--inline {
+        flex-wrap: unset;
+        flex-direction: column;
+        height: 300px;
+    }
+    aside .accomodation__content  div a {
+        height: 140px;
+        width: 230px;
+    }
+    .accomodation__content > div {
+        padding: 0px 10px;
+    }    
+    aside .accomodation__content {
+        align-items: end;
+        flex-wrap: unset;
+    }
+    .accomodation.accomodation--inline .accomodation__content > div {
+        margin: 15px;
+    }
+    aside .card__content {
+        padding: 0px 0px 0px 10px;
+        width: 140px;
+        margin: 0; 
+    }
+    aside .card__text {
+        padding-bottom: 5px;
+    }    
 
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    nav li {
+        border-bottom: 3px solid transparent;
+        
+    }
+
+    nav li:hover {
+        border-bottom: solid #0065FC;
+        color: #0065FC;
+        border-top: 3px solid transparent;
+    }
+    .search-form form button {
+        width: 80px;
+    }
+    
+
+}
 
 
