@@ -33,8 +33,7 @@ h3 {
     font-weight: 700;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 /* HEADER */
 nav {
@@ -79,8 +78,7 @@ nav li:hover {
     height: 40px;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 /* TITLE */
 #title {
@@ -103,8 +101,7 @@ h1+h2 {
     display: flex;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 /*SEARCH BAR */
 .search-form {
@@ -150,8 +147,7 @@ input::placeholder {
     font-size: large;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 .search-form form {
     display: flex;
@@ -321,7 +317,54 @@ aside .card__content {
     padding-right: 0;
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    #accomodation {
+        display: block;
+    }
+    .accomodation.accomodation--inline .accomodation__content {
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+    }
+    #accomodation section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #accomodation  aside {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    .accomodation.accomodation--inline {
+        flex-wrap: unset;
+        flex-direction: column;
+        height: 300px;
+    }
+    aside .accomodation__content  div a {
+        height: 140px;
+        width: 230px;
+    }
+    .accomodation__content > div {
+        padding: 0px 10px;
+    }    
+    aside .accomodation__content {
+        align-items: end;
+        flex-wrap: unset;
+    }
+    .accomodation.accomodation--inline .accomodation__content > div {
+        margin: 15px;
+    }
+    aside .card__content {
+        padding: 0px 0px 0px 10px;
+        width: 140px;
+        margin: 0; 
+    }
+    aside .card__text {
+        padding-bottom: 5px;
+    }    
+
+}
 @media (max-width: 768px) {}
 
 aside .card__text {
@@ -372,8 +415,7 @@ aside .card__text {
     margin: 10px;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 
 /* CARD INLINE */
@@ -387,6 +429,13 @@ aside .card__text {
     height: auto;
 }
 
+aside .card__content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
 
 
 /* STARS */
@@ -398,8 +447,7 @@ aside .card__text {
     color: #6d6d6d;
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
+
 
 /* ACTIVITIES */
 #activities {
@@ -467,22 +515,6 @@ footer ul li h3 {
 
 }
 
-@media (max-width: 992px) {}
-@media (max-width: 768px) {}
 
 
-@media (max-width: 992px) {
-    .search-form{
-        width: 40%;
-    }
-    
-    #accomodation > section {
-        
-    }
-    #accomodation > aside {
-        
-    }
 
-
-} 
-@media (max-width: 768px) {} 
