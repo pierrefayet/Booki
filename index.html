@@ -14,15 +14,23 @@
 <body>
 
 	<!-- Header -->
-	<header>
-		<nav>
-			<img class="logo" src="./assets/images/logo/Booki.png" alt="logo Booki">
-			<ul>
-				<li><a href="#accomodation">Hébergements</a></li>
-				<li><a href="#activities">Activités</a></li>
-			</ul>
-		</nav>
-	</header>
+	<header class="header">
+        <div class="header__logo">
+            <a href="#_">
+                <img class="logo" src="./assets/images/logo/Booki.png" alt="logo Booki">
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li class="active">
+                    <a href="#accomodation">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#activities">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 	<main>
 
@@ -45,36 +53,47 @@
 		</section>
 
 		<!-- SECTION FILTRES -->
-		<section id="filters">
-			<h3>Filtres</h3>
-
-			<ul>
-				<li>
-					<span>
-						<i class="fas fa-money-bill-wave"></i>
-						<a href="#">Economique</a>
-					</span>
-				</li>
-				<li>
-					<span>
-						<i class="fa-solid fa-child-reaching"></i>
-						<a href="#">Familial</a>
-					</span>
-				</li>
-				<li>
-					<span>
-						<i class="fa-sharp fa-solid fa-heart"></i>
-						<a href="#">Romantique</a>
-					</span>
-				</li>
-				<li>
-					<span>
-						<i class="fa-solid fa-dog"></i>
-						<a href="#">Animaux autorisés</a>
-					</span>
-				</li>
-			</ul>
-		</section>
+		<section>
+            <div class="filter">
+                <p class="filter__title">
+                    Filtres
+                </p>
+                <div class="filter__list">
+					<div>
+						<button class="filter__cta">
+							<i class="fas fa-money-bill-wave"></i>
+							<span>
+								Economique
+							</span>
+						</button>
+					</div>
+					<div>
+						<button class="filter__cta">
+							<i class="fas fa-money-bill-wave"></i>
+							<span>
+								Familial
+							</span>
+						</button>
+					</div>
+					<div>
+						<button class="filter__cta">
+							<i class="fa-solid fa-child-reaching"></i>
+							<span>
+								Romantique
+							</span>
+						</button>
+					</div>
+					<div>
+						<button class="filter__cta">
+							<i class="fa-solid fa-dog"></i>
+							<span>
+								Animaux autorisés
+							</span>
+						</button>
+					</div>
+				</div>
+            </div>
+        </section>
 		<div id="information">
 			<ul>
 				<li><i class="fa-solid fa-info"></i></li>
@@ -409,31 +428,30 @@
 
 	<!-- FOOTER -->
 
-	<footer>
-
-		<ul>
-			<li>
-				<h3>À propos</h3>
-			</li>
-			<li>Fonctionnement du site</li>
-			<li>Conditions générales </li>
-			<li>Données et confidentialité</li>
-		</ul>
-		<ul>
-			<li>
-				<h3>Nos hébergements</h3>
-			</li>
-			<li>Charte qualité</li>
-			<li>Proposer votre hotel</li>
-		</ul>
-		<ul>
-			<li>
-				<h3>Assistance</h3>
-			</li>
-			<li>Centre d'aide</li>
-			<li>Nous contacter</li>
-		</ul>
-	</footer>
+	<!-- FOOTER -->
+    <footer class="footer">
+        <nav>
+            <ul class="footer__nav">
+                <li class="footer__item">
+                    <h3>A propos</h3>
+                    <a href="#_">Fonctionnement du site</a>
+                    <a href="#_">Conditions générales de vente</a>
+                    <a href="#_">Données et confidentialité</a>
+                </li>
+                <li class="footer__item">
+                    <h3>Nos hébergements</h3>
+                    <a href="#_">Charte qualité</a>
+                    <a href="#_">Fonctionnement du site</a>
+                    <a href="#_">Soumettre votre hôtel</a>
+                </li>
+                <li class="footer__item">
+                    <h3>Assistance</h3>
+                    <a href="#_">Centre d'aide</a>
+                    <a href="#_">Nous contacter</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
