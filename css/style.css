@@ -3,6 +3,8 @@
 /* COLOR */
 
 :root {
+    --color-white-100: #f7f7f7;
+    --color-black-100: rgb(10, 10, 10);
     --color-grey-100: #F2F2F2;
     --color-grey-200: #D9D9D9;
     --color-blue-100: #DEEBFF;
@@ -13,7 +15,7 @@
 /*GENERIQUE*/
 * {
     font-family: "Raleway", "sans-serif";
-    color: #242424;
+    color: var(--color-black-100);
 }
 
 body {
@@ -41,9 +43,7 @@ h3 {
 }
 
 
-
 /* HEADER */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ h3 {
     border-top: transparent 3px solid;
     transition: all .2s ease-in-out;
 }
-.header__nav li.active,
+
 .header__nav li:hover {
     border-top-color: var(--color-blue-200);
     color: var(--color-blue-200);
@@ -111,7 +111,7 @@ h1+h2 {
 }
 
 input::placeholder {
-    color: #141414;
+    color: var(--color-black-100);
 }
 
 .search-form form i {
@@ -119,16 +119,16 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     border-radius: 10px 0px 0px 10px;
-    background-color: rgb(212 212 212 / 34%);
+    background-color: var(--color-grey-200);
     width: 50px;
     object-fit: contain;
     font-size: x-large;
-    color: #2f2f2f;
+    color: var(--color-black-100);
 }
 
 .search-form form input {
     padding-left: 20px;
-    border: 1px solid rgb(241, 240, 240);
+    border: 1px solid var(--color-grey-100);
     border-left: transparent;
     font-weight: bold;
     font-size: large;
@@ -137,10 +137,10 @@ input::placeholder {
 
 .search-form form button {
     border: transparent;
-    background-color: #0065FC;
+    background-color: var(--color-blue-300);
     border-radius: 0px 10px 10px 0px;
     font-weight: bold;
-    color: aliceblue;
+    color: var(--color-white-100);
     width: 132px;
     font-size: large;
 }
@@ -151,12 +151,15 @@ input::placeholder {
     height: 60px
 }
 
+.search-form span {
+    color: var(--color-white-100);
+}
+
 .fa-solid.fa-magnifying-glass {
     display: none;
 }
 
-/* FILTER */
-/* FILTER */
+
 /* FILTER */
 .filter {
     display: flex;
@@ -258,13 +261,13 @@ input::placeholder {
 #information > ul > li i{
     height: 26px;
     width: 26px;
-    border: solid 3px rgb(241, 240, 240);
+    border: solid 3px var(--color-grey-100);
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1%;
-    color: #0065FC;
+    color: var(--color-blue-200);
     font-weight: 800;
     font-size: medium
 }
@@ -297,7 +300,7 @@ input::placeholder {
 .accomodation {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(207, 207, 207, 0.641);
+    background-color: var(--color-grey-100);
     border-radius: 20px;
     padding: 20px;
 }
@@ -329,7 +332,7 @@ input::placeholder {
 .accomodation__cta {
     font-weight: bold;
     border: transparent;
-    background-color: rgb(237 222 222 / 64%);
+    background-color: var(--color-grey-100);
 }
 .lowPrice {
     font-weight: bold;
@@ -358,14 +361,14 @@ aside .card__text {
 }
 
 .fa-chart-line {
-    color: #0065FC;
+    color: var(--color-blue-200);
 }
 
 /* cards */
 .card {
     border-radius: 20px;
     padding: 8px;
-    background-color: white;
+    background-color: var(--color-white-100);
     box-shadow: 1px -1px 20px 0px rgba(0,0,0,0.2);
 }
 .card__media {
@@ -425,11 +428,11 @@ aside .card__content {
 
 /* STARS */
 .stars .fa-solid.blue {
-    color: #0065FC;
+    color: var(--color-blue-200);
 }
 
 .stars .fa-solid.grey {
-    color: #6d6d6d;
+    color: var(--color-grey-200);
 }
 
 aside .card__content .stars {
@@ -590,8 +593,8 @@ aside .card__content .stars {
     }
 
     nav li:hover {
-        border-bottom: solid #0065FC;
-        color: #0065FC;
+        border-bottom: solid var(--color-blue-200);
+        color: var(--color-blue-200);
         border-top: 3px solid transparent;
     }
     .search-form {
@@ -605,11 +608,9 @@ aside .card__content .stars {
         width: 80px;
     }
     .fa-solid.fa-magnifying-glass {
-        background-color: #0065FC;
+        background-color: var(--color-blue-300);
         display: initial;
     }
-    
-    
     #accomodation {
         display: flex;
         flex-direction: column;
@@ -622,7 +623,7 @@ aside .card__content .stars {
         flex-wrap: unset;
         flex-direction: column;
         width: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: var(--color-grey-100);
         
     }
     .accomodation__content {
@@ -667,6 +668,4 @@ aside .card__content .stars {
         margin: 0 0px 40px 0;
         height: 270px;
     }
-    
-    
 }
