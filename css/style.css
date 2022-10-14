@@ -119,7 +119,7 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     border-radius: 10px 0px 0px 10px;
-    background-color: var(--color-grey-200);
+    background-color: var(--color-grey-100);
     width: 50px;
     object-fit: contain;
     font-size: x-large;
@@ -212,36 +212,6 @@ input::placeholder {
 .filter__cta span {
     font-weight: 700;
 }
-@media (max-width: 992px) {
-    .filter__list {
-        flex-wrap: wrap;
-    }
-    .filter__list > div:not(:last-child) {
-        margin-right: 15px;
-    }
-    .filter__title {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .filter__cta {
-        margin-bottom: 10px;
-    }
-}
-@media (max-width: 768px) {
-    .filter__list {
-        display: flex;
-        margin: 0 -10px;
-    }
-    .filter__list > div {
-        margin: 0!important;
-        padding: 0 10px;
-        width: 50%;
-    }
-    .filter__cta {
-        width: 100%;
-    }
-}
-
 
 /* INFORMATION */
 #information  {
@@ -352,8 +322,13 @@ input::placeholder {
 }
 
 aside .card__content {
-    padding-left: 5px;
-    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 80%;
 }
 
 aside .card__text {
@@ -412,8 +387,8 @@ aside .card__text {
 }
 .card.card--inline .card__media {
     border-radius: 20px 0 0 20px;
-    width: 100px;
-    height: auto;
+    width: 150px;
+    height: 150px;
 }
 
 aside .card__content {
@@ -421,7 +396,8 @@ aside .card__content {
     flex-direction: column;
     text-align: start;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+    width: 80%;
 }
 
 
@@ -484,7 +460,6 @@ aside .card__content .stars {
 
 
 /* FOOTER */
-/* FOOTER */
 .footer {
     background-color: var(--color-grey-100);
     padding: 50px 4%;
@@ -512,21 +487,30 @@ aside .card__content .stars {
 .footer__item a:not(:last-child) {
     margin-bottom: 10px;
 }
-@media (max-width: 768px) {
-    .footer__item {
-        width: 100%;
-    }
-    .footer__item:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
+
 
 @media (max-width: 1025px) {
+    
+    .filter__list {
+        flex-wrap: wrap;
+    }
+    .filter__list > div:not(:last-child) {
+        margin-right: 15px;
+    }
+    .filter__title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .filter__cta {
+        margin-bottom: 10px;
+    }
+    
     .fa-solid.fa-magnifying-glass {
         display: none;
     }
     #accomodation {
         display: block;
+        margin-left: 10px;
     }
     .accomodation.accomodation--inline .accomodation__content {
         flex-direction: row;
@@ -569,13 +553,23 @@ aside .card__content .stars {
     }
     aside .card__text {
         padding-bottom: 5px;
-    }    
-}
+    }
+}      
+
 @media (max-width: 768px) {
     body {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .header__nav li {
+        border-top: none
+    }    
     nav {
         flex-direction: column;
     }
@@ -586,16 +580,15 @@ aside .card__content .stars {
         margin: 0px;
         padding: 0px;
     }
-    
     nav li {
         border-bottom: 3px solid transparent;
+        border-top: 3px solid var(--color-white-100);
         
     }
-
     nav li:hover {
         border-bottom: solid var(--color-blue-200);
         color: var(--color-blue-200);
-        border-top: 3px solid transparent;
+        
     }
     .search-form {
         width: 100%;
@@ -606,6 +599,18 @@ aside .card__content .stars {
     .search-form .search-text {
         display: none;
         width: 80px;
+    }
+    .filter__list {
+        display: flex;
+        margin: 0 -5px;
+    }
+    .filter__list > div {
+        
+        padding: 0 5px;
+        width: 45%;
+    }
+    .filter__cta {
+        width: 100%;
     }
     .fa-solid.fa-magnifying-glass {
         background-color: var(--color-blue-300);
@@ -623,15 +628,14 @@ aside .card__content .stars {
         flex-wrap: unset;
         flex-direction: column;
         width: 100%;
-        background-color: var(--color-grey-100);
-        
+        background-color: var(--color-grey-100);  
     }
     .accomodation__content {
         flex-direction: column;
     }
     .accomodation__content > div {
         width: 100%;
-        
+        padding: 0px;
     }
     .accomodation__cta {
         display: none ;
@@ -668,4 +672,8 @@ aside .card__content .stars {
         margin: 0 0px 40px 0;
         height: 270px;
     }
-}
+    .footer__nav {
+        flex-direction: column;
+    }
+}    
+
