@@ -608,12 +608,17 @@ aside .card__content .stars {
     }
     .filter__list {
         display: flex;
-        margin: 0 -5px;
+        margin: 0 -10px;
+        justify-content: center;
     }
+    
     .filter__list > div {
         
         padding: 0 5px;
-        width: 45%;
+        width: 40%;
+    }
+    .filter__list > div:not(:last-child) {
+        margin-right: 0;
     }
     .filter__cta {
         width: 160px;
@@ -651,6 +656,7 @@ aside .card__content .stars {
         flex-direction: column;
         margin-bottom: 50px;
         margin-top: 0px;
+        width: 97%;
         height: 50%;
     }
     aside .accomodation__content div a {
@@ -669,6 +675,7 @@ aside .card__content .stars {
     .accomodation.accomodation--inline {
         height: auto;
         box-sizing: border-box;
+        border-radius: 20px;
     }
     .activity__content {
         flex-direction: column;
