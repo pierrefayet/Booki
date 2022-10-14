@@ -190,9 +190,7 @@ input::placeholder {
 }
 .filter__cta i {
     position: absolute;
-    top: 50%;
-    left: 0;
-    right: auto;
+    left: 0px;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -202,12 +200,13 @@ input::placeholder {
     border-radius: 50%;
     background-color: white;
     color: var(--color-blue-200);
-    transform: translateY(-50%);
-    transition: all .3s ease-in-out;
+    height: 41px;
+    
 }
-.filter__cta:hover i {
-    width: 100%;
-    border-radius: 60px;
+.filter__cta:hover  {
+    background-color: var(--color-blue-200);
+    
+    
 }
 .filter__cta span {
     font-weight: 700;
@@ -270,9 +269,11 @@ input::placeholder {
 .accomodation {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+}
+.bg-grey {
     background-color: var(--color-grey-100);
     border-radius: 20px;
-    padding: 20px;
 }
 .accomodation .column {
     flex-direction: column;
@@ -330,9 +331,8 @@ aside .card__content {
     padding-left: 10px;
     width: 80%;
 }
-
-aside .card__text {
-    padding-bottom: 30px;
+aside .card__content > div {
+    margin-top: auto; 
 }
 
 .fa-chart-line {
@@ -391,15 +391,11 @@ aside .card__text {
     height: 150px;
 }
 
-aside .card__content {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin: 0;
-    padding-left: 10px;
-    width: 80%;
-}
 
+aside 
+.card__title {
+    padding-top: 10px;
+}
 
 
 /* STARS */
@@ -417,6 +413,7 @@ aside .card__content .stars {
 /* ACTIVITIES */
 #activities {
     width: 100%;
+    margin-bottom: 40px;
 }  
 
 #activities section {
@@ -431,11 +428,12 @@ aside .card__content .stars {
 .activity__content {
     display: flex;
     width: 100%;
+    min-height: 500px;
 }
 
 .activity__content > div {
     width: 25%;
-    margin: 0 50px 40px 0;
+    margin: 0 50px 0 0;
     box-shadow: 1px -1px 20px 0px rgba(0,0,0,0.2);
     border-radius: 20px;
     
@@ -524,7 +522,7 @@ aside .card__content .stars {
     }
     #accomodation  aside {
         width: 100%;
-        padding-left: 0;
+        padding: 0;
         margin-top: 50px;
     }
     .accomodation.accomodation--inline {
@@ -534,7 +532,7 @@ aside .card__content .stars {
     }
     aside .accomodation__content  div a {
         height: 140px;
-        width: 230px;
+        width: 200px;
     }
     .accomodation__content > div {
         padding: 0px 10px;
@@ -548,13 +546,21 @@ aside .card__content .stars {
     }
     aside .card__content {
         padding: 0px 0px 0px 10px;
-        width: 140px;
-        margin: 0; 
+        width: 170px;
+        margin: 0;
     }
     aside .card__text {
         padding-bottom: 5px;
+        font-size: 12px;
     }
-}      
+    .card.card--inline .card__media {
+        width: 100px;
+        height: 140px;
+    }
+    aside .card__title {
+        font-size: 14px;
+    }
+}              
 
 @media (max-width: 768px) {
     body {
@@ -610,7 +616,7 @@ aside .card__content .stars {
         width: 45%;
     }
     .filter__cta {
-        width: 100%;
+        width: 160px;
     }
     .fa-solid.fa-magnifying-glass {
         background-color: var(--color-blue-300);
