@@ -407,9 +407,7 @@ aside
     color: var(--color-grey-200);
 }
 
-aside .card__content .stars {
-    position: bottom;
-}
+
 /* ACTIVITIES */
 #activities {
     width: 100%;
@@ -611,7 +609,6 @@ aside .card__content .stars {
         margin: 0 -10px;
         justify-content: center;
     }
-    
     .filter__list > div {
         
         padding: 0 5px;
@@ -622,6 +619,9 @@ aside .card__content .stars {
     }
     .filter__cta {
         width: 160px;
+    }
+    .filter__title {
+        width: 40%;
     }
     .fa-solid.fa-magnifying-glass {
         background-color: var(--color-blue-300);
